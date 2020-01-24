@@ -9,15 +9,16 @@ class test
 int test::prime_num(int x)
      {     int flag=0;
 	n=x;
-	for(int i=2;i<n;i++)
+	for(int i=1;i<n;i++)
 	    {
 	       if(n%i==0)
 		{
-		   flag=1;
+		   flag++;
 		   break;
 		}
 
-	    } return flag;
+	    } 
+      return flag;
 	}
 void main()
 {
@@ -28,7 +29,7 @@ void main()
 	cout<<"enter number";
 	cin>>num;
        r=obj.prime_num(num);
-       if(r==1)
+       if(r==2)
 	   {
 		cout<<"Not_Prime";
 	   }
